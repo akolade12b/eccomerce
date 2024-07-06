@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/376fe4413c.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="dist/style.css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./phones/phones.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="./phones/header.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+</head>
+</html><body>
+<div id="contentParagraph"></div>
+ 
+  <div class="offcanvas offcanvas-start bodyy" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 300px;overflow-x: hidden; margin:0">
+      
+    <div class="offcanvas-bod" style="width: 300px;overflow-x: hidden; margin:0  ">
+  
+     <!-- of canvas body-->
+    
+              <ul style="margin-left:-30px;"> 
+  <a href="../upload.html"><div class="off-list parent" >
+  Upload products
+  </div></a>
+  <div  style="font-weight: 600;font-size:large;font-family:Verdana, Geneva, Tahoma, sans-serif;letter-spacing:1px;margin-bottom:15px">categories</div>
+  <div class="dropdow off-lis">
+      <div class="super_market parent"  onclick="document.querySelector('.super_market_items').classList.toggle('sub_items')"   ><i class="fa-solid fa-apple-whole"></i>super market</div>
+  
+   <div  class="sub_items super_market_items subs" >
+  
+  
+     <div class="sub">Food cupboard</div>
+       <div class="sub">Beverages</div>
+         <div  class="sub">Baby product</div>
+           <div  class="sub">Household cleansing</div>
+             <div  class="sub">Beer wine and spirits</div>
+          </div>
+  
+                      
+   
+   <div class="fashion parent"  onclick="document.querySelector('.fashion_items').classList.toggle('sub_items')" ><i class="fa-solid fa-shirt"></i>Fashion</div>
+    <div class=" sub_items fashion_items subs">
+         <div  class="sub">Women fashion</div>
+            <div  class="sub">Men fashion</div>
+             <div  class="sub">Watches</div>
+               <div  class="sub">Sun glasses</div>
+                 <div  class="sub">Kid fashion</div>
+               <div  class="sub">All fashion</div>
+  
+           </div>
+  
+   <div class="electronics parent"  onclick="document.querySelector('.electronics_items').classList.toggle('sub_items')" > <i class="fa-solid fa-computer"></i>Electronics</div>
+       <div class="sub_items electronics_items subs">
+           <div class="sub">Televison and videos</div>
+                     <div  class="sub">Camera and photos</div>
+                     <div  class="sub">Home audio</div>
+                     <div  class="sub">Generators and portable power</div>
+                     <div  class="sub">Watches</div>
+                     </div>
+  
+    <div class="gaming parent" onclick="document.querySelector('.gaming_items').classList.toggle('sub_items')"><i class="fa-solid fa-gamepad"></i>Gaming</div>
+                     <div class="sub_items gaming_items subs">
+                      <div  class="sub">Playstation</div>
+                      <div  class="sub">Nintendo</div>
+                      <div  class="sub">Xbox</div>
+  </div>
+
+
+  <div class="fashion parent"  onclick="document.querySelector('.phones_items').classList.toggle('sub_items')" ><i class="fa-solid fa-mobile-screen"></i>phones</div>
+
+  <div class="sub_items phones_items subs">
+  <a href="./phones/phones.html">  <div  class="sub">Tecno</div></a>    <div  class="sub">Huawei</div>
+    <div  class="sub">samsung</div>
+    <div  class="sub">iphone</div>  
+      <div  class="sub">infinix</div>
+      <div  class="sub">itel</div>
+</div>
+<div class=" parent"><i class="fa-solid fa-arrow-right"></i>more</div>
+  </ul></div></div>
+  <header class="header" >
+    <!-- contact content -->
+  
+    <!-- / contact content -->
+    <div class="container" style="margin: 0;padding:0">
+      <!-- logo -->
+  <div class="company-name">Alimart stores</div>
+      <!-- open nav mobile -->
+  
+      <!--search -->
+      <label class="open-search" for="open-search" style="margin-top: -12px;" on>
+        <i class="fas fa-search" ></i>
+  
+              <input class="input-open-search" id="open-search" type="checkbox" name="menu" />
+      <div class="search" style="width:100%">
+     
+        <input type="text" placeholder="What are you looking for?" class="input-search" />
+        <button class="button-search" ><i class="fas fa-search"></i></button>
+      </div>
+      </label>
+      <!-- // search -->
+      <nav class="nav-content">
+        <!-- nav -->
+        <ul class="nav-content-list">
+          <li class="nav-content-item account-login">
+            <label class="open-menu-login-account" for="open-menu-login-account">
+  
+              <input class="input-menu" id="open-menu-login-account" type="checkbox" name="menu" />
+  
+              <i class="fas fa-user-circle"></i><span class="login-text">Hello, Sign in <strong>Create Account</strong></span> <span class="item-arrow"></span>
+  
+              <!-- submenu -->
+              <ul class="login-list">
+                <li class="login-list-item"><a href="https://www.cupcom.com.br/">My account</a></li>
+                <li class="login-list-item"><a href="https://www.cupcom.com.br/">Create account</a></li>
+                <li class="login-list-item"><a href="https://www.cupcom.com.br/">logout</a></li>
+                </label>
+              </ul>
+          </li>
+  
+          <li class="nav-content-item"><a class="nav-content-link" href="https://www.cupcom.com.br/"><i class="fas fa-shopping-cart"></i>1</a></li>
+          <a class="btn btn-primar" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" >
+          <li class="nav-content-item navbar-toggler collapsed " data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="true"><i class="fa-solid fa-bars"></i></li></a>
+  
+          <!-- call to action -->
+        </ul>
+      </nav>
+    </div>
+    <!-- nav navigation commerce -->
+    <div class="nav-container">
+      <nav class="all-category-nav">
+        <label class="open-menu-all" for="open-menu-all">
+          <input class="input-menu-all" id="open-menu-all" type="checkbox" name="menu-open" />
+         
+        
+  
+   
+      </nav>
+   
+    </div>
+  </header>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div  class="upfirst">
+
+ 
+    <img src="/images/hp.jpg"  class="first" style="" width="100%" >
+  </div>
+
+  <div class="parentdiv" style="">
+    <div class="grid  grid-cols-4 xl:grid-cols-6  lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-5 xs:grid-cols-4 gap-2">
+        <div class=" grid-item p-0 " ><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/Collections/Thunbmails/Artboard_1.png" class="img"><div class="b-grid-img">Clearance sales</div></div>
+
+        <div class="grid-item  p-0"><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/Collections/Thunbmails/Artboard_1_copy_13.png" class="img"><div class="b-grid-img">special offers</div></div>
+        <div class="grid-item p-0 text-center"><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/Collections/Thunbmails/electronics.png" class="img"><div class="b-grid-img">Electronic deals</div></div>
+       <a href="phones/phones.html">  <div class="grid-item  p-0 text-center"><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/Collections/Thunbmails/Artboard_1_copy_2.png" class="img"><div class="b-grid-img">phones and tablets</div></div></a>
+
+        <div class="grid-item p-0 text-center"><img src="https://ng.jumia.is/cms/0-1-weekly-cps/0-2024/week25/Artboard_1_copy_4.png" class="img"><div class="b-grid-img">smart gadget</div> </div>
+
+
+        <div class="grid-item  p-0 text-center"><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/Collections/Thunbmails/Artboard_1_copy.png" class="img"><div class="b-grid-img">Home essentials</div></div>
+        <div class="grid-item p-0 text-center"><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/Collections/Thunbmails/Artboard_1_copy_7.png" class="img"><div class="b-grid-img">Mobile accessories</div> </div>
+      
+
+
+      <div class="grid-item p-0 text-center"><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/Collections/Thunbmails/beauty.png" class="img"><div class="b-grid-img">Beauty deals</div> </div>
+   
+    <div class="grid-item p-0 text-center"><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/Collections/Thunbmails/Artboard_1_copy_4.png" class="img"><div class="b-grid-img">Grocery deals</div> </div>
+ 
+ 
+<div class="grid-item p-0 text-center"><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/Collections/Thunbmails/appliances.png" class="img"><div class="b-grid-img">Appliance deals</div> </div>
+
+<div class="grid-item p-0 text-center"><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/Collections/Thunbmails/Artboard_1_copy_6.png" class="img"><div class="b-grid-img">sneakers</div> </div>
+
+<div class="grid-item p-0 text-center"><img src="https://ng.jumia.is/cms/0-1-weekly-cps/0-2024/week25/Artboard_1_copy_5.png" class="img"><div class="b-grid-img">Home decor</div> </div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+<div class="bg-green-400 text-center p-3 mb-1 mt-3">50% discount on first purchase</div>
+<div class="row " >
+    <div class="column column1 " >
+      <img src="https://media.istockphoto.com/id/1481121206/vector/mega-sale-special-offer-50-off-sale-banner-sign-board-promotion-vector.jpg?s=612x612&w=0&k=20&c=5M17WHjcYG_was2zo2w1wLvCwtyaI7W9-8ZtGIDrGq0=" alt="Snow" style="width:100% ;height:100%" class="image">
+    </div>
+    <div class="column column2" >
+      <img src="https://media.istockphoto.com/id/497851321/photo/i-am-50-off-sale-tag-3d-render.jpg?s=612x612&w=0&k=20&c=B5p6hPKABNT8lwEMe0lSNl8FpWj7Do5oNh_NJU0F2uI=" alt="Forest" style="width:100%; height:100%" class="image">
+    </div>
+ 
+  </div>
+    
+    
+
+
+  <div class="bg-green-400 text-center p-3 mb-1 mt-3">Appliances Deals</div>
+
+
+  <div class="parentdiv">
+
+    <div class="grid  grid-cols-4 xl:grid-cols-6  lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-5 xs:grid-cols-4 gap-2">
+        <div class=" grid-item p-0 " ><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/categpry-triple-banner/Appliances/Air_conditioner.jpg" class="img"><div class="b-grid-img">Air conditioner</div></div>
+
+
+
+        <div class="grid-item  p-0 text-center"><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/categpry-triple-banner/Appliances/washing_machine.jpg" class="img" height="200px"><div class="b-grid-img">washing machine</div></div>
+
+
+        <div class="grid-item p-0 text-center" ><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/Collections/Gaming.jpg" class="img"><div class="b-grid-img">Gaming deals</div> </div>
+
+        <div class="grid-item p-0 text-center" ><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/categpry-triple-banner/Appliances/fridge.jpg" class="img"><div class="b-grid-img">Refrigerator</div> </div>
+
+        <div class="grid-item p-0 text-center" ><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/Collections/Computing.jpg" class="img"><div class="b-grid-img">Computer deals</div> </div>
+        <div class="grid-item p-0 text-center" ><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/Collections/Fashion.jpg" class="img"><div class="b-grid-img">fashion deals</div> </div>
+
+        <div class="grid-item p-0 text-center" ><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/categpry-triple-banner/groceries/Untitled-5.png" class="img"><div class="b-grid-img">fragrance</div> </div>
+
+        <div class="grid-item p-0 text-center" ><img src="https://ng.jumia.is/cms/0-6-anniversary/2024/categpry-triple-banner/groceries/Untitled-3.png" class="img"><div class="b-grid-img">Wine</div> </div>
+
+    </div></div>
+
+
+    <div class="bg-green-400 text-center p-3 mb-1 mt-3" >Exclusive brand patners</div>
+    <div data-aos="flip-right">keqmwkmimeri</div>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script>
+  
+  
+
+
+
+
+
+
+  let first =document.querySelector('.first');
+let upfirst=document.querySelector('.upfirst');
+
+
+ 
+
+  setInterval(()=>{
+    upfirst.classList.remove('animation')
+
+  },5000)
+
+
+  setInterval(()=>{
+  
+    first.src="/images/nike.jpg"
+
+setTimeout(()=>{
+
+})
+
+
+
+
+
+
+  },5000)
+  
+  setInterval(()=>{
+  
+    first.src="/images/slider1_bike.jpg"
+  },10000)
+  
+  setInterval(()=>{
+   
+    first.src="/images/hp.jpg"
+  },15000); 
+  
+  
+
+
+
+
+
+
+
+ </script>  
+ <style>
+.up{
+  position: fixed;bottom: 50px;
+  padding:20px;background-color: red;color: black;
+  right:2px;
+  border-radius: 30px;
+
+}
+
+a{
+  text-decoration: none;color: black;
+}
+
+a:hover{color:red;}
+
+
+.row{margin:3%;
+   background-color:pink;
+   border-radius:5px}
+
+
+
+
+
+.column {
+        float: left;
+        width: 50%;
+        padding: 3px;
+        height: 250px;
+   padding:10px;
+   border-radius:5px
+   
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+
+
+
+
+
+
+
+
+    .image{width: 100%; height: 100px;border-radius: 5px;}
+.animation{
+    transition: 1s;
+margin-left:1000px
+}
+  .first{height:70vh}
+  @media (min-width:1000px) {
+    .first{height:75vh}
+    .b-grid-img{font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:larger;font-weight: 700;}
+
+  }
+  @media (max-width:700px) {
+.column{height: 200px;}
+
+  }
+  @media (max-width:500px) {
+    .first{height:45vh ;}
+
+  }
+  @media (max-width:400px) {
+    .first{height:40vh ;}
+
+  }
+ </style>
+ <style>
+    .image{width: 40%; height: 100%;;}
+    .b-grid-img{text-align: center;font-weight: 300; font-size: smaller; line-heght: 0%;}
+    body{background-color: whitesmoke; background-image: url();}
+.parentdiv{background-color: white;padding: 5px; padding-top: 5px;;box-shadow: 0 0 0 red;margin-left: 5%;margin-right:5%;margin-top: 30px;margin-bottom: 30px;}
+    .grid-item{width: 100%;height: 74%;margin-bottom: 0px;}
+   .img{ height: 100%; width: 100%;border-radius: 5px;margin: 1px;}
+   @media (max-width:700px) {
+    .parentdiv{margin-left: 10px;margin-right: 10px;}
+    .row{margin:10px; background-color:pink;border-radius:10px}
+}
+
+   @media (max-width:490px) {
+    .grid-item{width: 100%;height: 70%;margin-bottom: 0px;}
+    .column{height: 160px;}
+}
+@media (max-width:416px) {
+    .grid-item{width: 100%;height: 65%;;}
+    .column{height: 120px;}
+}
+@media (max-width:390px) {
+    .grid-item{width: 100%;height: 60%}
+
+}
+@media (max-width:360px) {
+    .grid-item{width: 100%;height: 59%;}
+
+}
+@media (max-width:335px) {
+    .grid-item{width: 100%;height: 57%;}
+    .column{height: 100px;}
+
+}
+ </style>
+</body>
+</html>

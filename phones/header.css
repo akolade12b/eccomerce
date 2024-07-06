@@ -1,0 +1,37 @@
+
+i{margin-right: 7px;}
+.parent{margin-top: 10px;margin-bottom: 5px;padding-left: 3px;padding-top: 5px;padding-bottom: 5px;}
+.parent:hover{background-color: black;color: white;transition: 0.6s;}
+.sub{margin-bottom: 10px;;}
+.sub_items{display: none;}
+.subs{margin-left: 40px;}
+
+.visible{display: block;}
+.off-list{margin-bottom: 20px;}
+.company-name{font-weight: 700;font-size:large;font-family:Verdana, Geneva, Tahoma, sans-serif;margin-top: -7px;}
+.search{border-radius: 8px;border: none;}
+.c-name{font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: large;letter-spacing: 1px;}
+.bars{position: relative;}
+.cart{position: relative;}
+.search-cat{position: absolute;}
+.search{width: 45%;margin-left: 90px;}
+header{background-color: black;padding: 10px;margin: 0;color: white;padding-bottom: 10px;margin-bottom: 3px;}
+.head{display: inline;}
+.invisible{visibility: hidden;}
+.cancel{float: right;margin-top: 3px;margin-bottom: 15px;}
+.blur{filter: blur(8px);
+  -webkit-filter: blur(8px);}
+.im{margin-left: auto; margin-right: auto;display: block;border-radius: 10px;}
+.centers{margin: 3px;margin-left: 15px;margin-right: 15px;}
+.names{font-weight: 600;font-size: larger;font-family:cursive;margin-top: 20px;}
+.descr{margin-top: 25px;margin-bottom: 25px;word-wrap: break-word;min-height: 5vh;}
+.add{width: 100%; border-radius: 15px;padding: 7px;}
+.parents{max-width: 300px;background-color: white;;margin-top: 7vh;border-radius: 15px;padding-bottom: 10px;position:fixed;left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);border: 1px solid black;visibility: visible;}
+
+
+
+
+
+
