@@ -1,9 +1,6 @@
 
-import {phonearr,savetostorage, } from "../array.js"
-import { gaming } from "../Gaming/gaming.js"
-import { fashion } from "../fashion/fashion.js"
-import { electronics } from "../Electronics/elrctronics.js"
-import { supermarket } from "../Super market/supermarket.js"
+import {phonearr,savetostorage } from "../array.js"
+
 import { cartarray,savetostoragecartarray,productinfo,savetostorageproductinfo } from "../array.js"
 console.log(phonearr)
 

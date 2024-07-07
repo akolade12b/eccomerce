@@ -1,7 +1,18 @@
 import { productinfo,cartarray,savetostoragecartarray } from "./array.js";
 console.log(productinfo)
 let acca=''
+
+
+
+
+
+
+
+
 productinfo.forEach((productinf)=>{
+ 
+
+
 acca+=`
 
 <header>
@@ -43,8 +54,8 @@ acca+=`
               </label>
             </ul>
         </li>
-
-        <li class="nav-content-item"><a class="nav-content-link" href="https://www.cupcom.com.br/"><i class="fas fa-shopping-cart"></i>1</a></li>
+<div class="aa">aa</div>
+        <li class="nav-content-item"><a class="nav-content-link" href="https://www.cupcom.com.br/"><i class="fas fa-shopping-cart"></i>${cartlength}</a></li>
         <a class="btn btn-primar" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" >
         <li class="nav-content-item navbar-toggler collapsed " data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="true"><i class="fa-solid fa-bars"></i></li></a>
 
@@ -252,38 +263,44 @@ acca+=`
 
 `
 document.querySelector('body').innerHTML=acca
-document.querySelector('.addtocart').addEventListener('click',()=>{
-   
-    let name=productinf.name
-    let price=productinf.price
-    let img =productinf.img
-    let desc=productinf.desc
-    let brandname=productinf.brandname
-    let category=productinf.category
-    let discountprice=productinf.discountprice
-    let pricen=productinf.pricen
-    let productlenght=Number(document.querySelector('.productlenght').value)
-    let matchingitem;
-    cartarray.forEach((items)=>{
-if(name===items.name){
-  matchingitem=items;
-}})
 
-if(matchingitem){
-  matchingitem.productlenght+=productlenght;
-  console.log('a')
-  savetostoragecartarray()
-}
-else{
-    cartarray.push({name:name, price:price, img:img, desc:desc, brandname:brandname,category:category,discountprice:discountprice,pricen:pricen,productlenght:productlenght})
-    savetostoragecartarray()
-    console.log(cartarray)
-}
+
+
+document.querySelector('.addtocart').addEventListener('click',()=>{
+
+    let name=productinf.name;let price=productinf.price; let img =productinf.img; let desc=productinf.desc; let brandname=productinf.brandname
+    let category=productinf.category; let discountprice=productinf.discountprice; let pricen=productinf.pricen
+    let productlenght=Number(document.querySelector('.productlenght').value)
+
+
+
+
+let matchingitem;
+    cartarray.forEach((items)=>{
+       if(name===items.name){
+          matchingitem=items;}
+})
+
+    if(matchingitem){
+    matchingitem.productlenght+=productlenght;
+    console.log('a')
+    savetostoragecartarray()}
+
+
+
+            else{
+                cartarray.push({name:name, price:price, img:img, desc:desc,
+                    brandname:brandname,category:category,discountprice:discountprice,
+                    pricen:pricen,productlenght:productlenght})
+            
+                savetostoragecartarray()
+                console.log(cartarray)}
 
 
     
 })
 })
+
 let number=1
 document.querySelectorAll('.add').forEach((add)=>{
 add.addEventListener('click',()=>{
