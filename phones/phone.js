@@ -62,7 +62,7 @@ console.log(productinfo)
   document.querySelector('.grandparents').innerHTML=`
   <div class="parents">
   <div class="centers">
-  <i class="fa-solid fa-x cancel">x</i>
+  <i class="fa-solid fa-x cancel"></i>
   <div style="padding-top: 10px;"><img src="${imgb}" width="258" height="208" class="im"></div>
   <div class="names">${nameb}</div>
   <div class="descr">Infinix Hot 30i (X669) 6.6, 128GB, UP TO 8GB RAM, 5000mAh, 13MP, 4G  </div>
