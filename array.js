@@ -84,7 +84,9 @@ savetostoragegaming()
 
 export let cartarray =JSON.parse(localStorage.getItem('cart'))
 if(!cartarray){
-  cartarray=[]
+  cartarray=[{
+    name:' Infinix Hot 30i (X669) 6.6, 128GB, UP TO 8GB RAM,5000mAh, 13MP, 4G ',price:'215,000',pricen:215000,img:'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/97/7191732/1.jpg?0385"'
+  },]
 }
 export function savetostoragecartarray(){
 localStorage.setItem('cart',JSON.stringify(cartarray))

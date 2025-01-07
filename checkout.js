@@ -120,8 +120,8 @@ function loop(){
 
  
   document.querySelectorAll('.trash').forEach((trash)=>{
-    let nu=trash.dataset
-   let productno=nu.number
+    let deleteid=trash.dataset
+   let productno=deleteid.number
     trash.addEventListener('click',()=>{
       console.log('a')
       cartarray.splice(productno,1);savetostoragecartarray();loop()

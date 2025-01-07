@@ -2,17 +2,8 @@ import { productinfo,cartarray,savetostoragecartarray } from "./array.js";
 console.log(productinfo)
 let acca=''
 
-
-
-
-
-
-
-
 productinfo.forEach((productinf)=>{
  
-
-
 acca+=`
 
 <header>
@@ -54,8 +45,8 @@ acca+=`
               </label>
             </ul>
         </li>
-<div class="aa">aa</div>
-        <li class="nav-content-item"><a class="nav-content-link" href="https://www.cupcom.com.br/"><i class="fas fa-shopping-cart"></i>${cartlength}</a></li>
+
+        <li class="nav-content-item"><a class="nav-content-link" href="./cart.html"><i class="fas fa-shopping-cart"></i>${cartarray.length}</a></li>
         <a class="btn btn-primar" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" >
         <li class="nav-content-item navbar-toggler collapsed " data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="true"><i class="fa-solid fa-bars"></i></li></a>
 

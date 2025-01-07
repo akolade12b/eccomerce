@@ -8,186 +8,268 @@
 <body>
   <div class="grandparent">
     <div class="grid">
+       <div class="grid1">
+<!--product info-->
+         <div class="product_info">Product Info</div>
+           <div> 
+             <div class="product_name">Product name</div>
+               <input type="name" placeholder="solidT-shirt" class="product_nameinp">  
+           </div>  
 
-      <div class="grid1">
-<!--product info--><div class="product_info">Product Info</div>
-                        <div> 
-                          <div class="product_name">Product name</div>
-                        <input type="name" placeholder="solidT-shirt" class="product_nameinp">  
+         <div>   
+              <div class="product_media">Product media </div>
+                <input type="file" class="image" accept="image/*">
+         </div>
+         
+        <div>
+              <div class="pricing">Pricing</div>
 
-                          </div>
 
-                      <div>    <div class="product_media">Product media </div>
-                              <input type="file" class="image" accept="image/*">
-                      </div>
-
-                      <div><div class="pricing">Pricing</div>
-<div class="pricegrid">
-                         <div style="display: inline;">
-                            <div  class="price2" >price</div>
-                            
-                           <input class="price_inp">
-                          </div>
-
-                          <div style="display: inline;">
-                            <div class="dprice">Discounted price</div>
-                           <input class="d_price_inp">
-                          </div>
-</div>
+    <div class="pricegrid">
+                <div style="display: inline;">
+                     <div  class="price2" >price</div>
+                        <input class="price_inp">
                     </div>
 
+              <div style="display: inline;">
+                  <div class="dprice">Discounted price</div>
+                      <input class="d_price_inp">
+                   </div>
 
-      </div>
-
-
-
-
-
-      <div class="grid2">
-<div >
-  <div class="p_category">Product categoy</div>
-  <select class="category">
-     
-    <option>
-      Super market
-    </option>
-    <option>
-      Fashion
-    </option>
-
-    <option>
-      Electronics
-    </option> 
-    <option>
-      Gaming
-    </option>
-    <option>
-      Phones
-    </option>
-  </select>
-</div>
-
-
-<div>
-  <div class="b_name">Brand name</div>
-  <input placeholder="write brand name" class="b_name_inp">
-</div>
-
-<div>
-  <div class="description">Description</div>
-  <textarea class="t_area"></textarea>
-</div>
-<button class="upload">Upload Product</button>
-
-
-
-      </div>
-      
-
-    </div>
+        </div>
+     </div>
   </div>
 
 
 
-<script src="upload.js" type="module">
+
+
+  <div class="grid2">
+    <div>
+      <div class="p_category">Product categoy</div>
+
+   <select class="category">
+
+     <option>Super market</option>
+     <option>Fashion</option>
+     <option>Electronics</option> 
+      <option> Gaming</option>
+     <option>Phones</option>
+
+   </select>
+  </div>
+
+
+ <div>
+
+   <div class="b_name">Brand name</div>
+  <input placeholder="write brand name" class="b_name_inp">
+
+ </div>
+
+
+ <div>
+
+  <div class="description">Description</div>
+  <textarea class="t_area"></textarea>
+
+ </div>
+
+
+<button class="upload">Upload Product</button>
+
+   </div>
+ </div>
+</div>
+
+
+
+<script src="/upload.js" type="module">
 
 </script>
 <style>
   .category{
-    border: none;border-bottom: 1px solid black;outline: 0;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: 0;
   }
-  body{margin-top: 20vh;}
-  .upload{padding: 7px;
+  body{
+    margin-top: 20vh;
+  }
+  .upload{
+    padding: 7px;
     width: 90%;
     margin-top: 20px;
     margin-bottom: 10px;
     border-radius: 10px;
-    border: none;background-color: rgb(5, 175, 5);}
-  .upload:hover{background-color: black;
-    color: white}
-.description{margin-top: 20px;
+    border: none;background-color: rgb(5, 175, 5);
+  }
+  .upload:hover{
+    background-color: black;
+    color: white
+  }
+.description{
+  margin-top: 20px;
    margin-bottom: 10px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;}
-.t_area{width: 80%;
-  padding: 8px;}
-  .price_inp,.d_price_inp{padding: 5px;border: none;border-bottom: 1px solid black;outline: 0;}
-  select{width: 90%;
-    padding: 7px;}
-  .b_name_inp{width: 82%;
-    padding: 7px;border: none;border-bottom: 1px solid black;outline: 0;}
-  .grid1{background-color: white;
+.t_area{
+  width: 80%;
+  padding: 8px;
+}
+  .price_inp,.d_price_inp{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: 0;}
+  select{
+    width: 90%;
+    padding: 7px;
+  }
+  .b_name_inp{
+    width: 82%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: 0;
+  }
+  .grid1{
+    background-color: white;
     margin-right: 20px;
     padding: 9px;
-    border-radius: 15px ;}
-  .grid2{background-color: white;
+    border-radius: 15px ;
+  }
+  .grid2{
+    background-color: white;
     padding-left: 9px;
-    border-radius: 15px;}
-  .grid{display:grid;
-    grid-template-columns: 70% 30%;}
-  .b_name{margin-top: 20px;
+    border-radius: 15px;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns: 70% 30%;
+  }
+  .b_name{
+    
+    margin-top: 20px;
      margin-bottom: 10px;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;}
-  .p_category{margin-top: 20px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  .p_category{
+    margin-top: 20px;
     margin-bottom: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
 
-  .price2,.dprice{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva;font-size: 14px;}
+  .price2,.dprice{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva;
+    font-size: 14px;}
   .pricegrid{display: grid;
-    grid-template-columns: repeat(2,1fr);}
-  .product_media{font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .product_media{
+    font-family: Verdana,
+     Geneva, Tahoma, sans-serif;
     margin-bottom: 5px;
     font-size: medium;
     margin-top: 20px;
-    margin-bottom: 10px;}
-  .product_name{font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+  }
+  .product_name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 5px;
-    font-size: medium;}
-  .product_nameinp{width: 80%;
-    padding: 8px;border: none;border-bottom: 1px solid black;outline: 0;}
-  .product_info{font-size: large;
+    font-size: medium;
+  }
+  .product_nameinp{
+    width: 80%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: 0;
+  }
+  .product_info{
+    font-size: large;
     font-weight: 700;
      margin-bottom: 20px;
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-  body{background-color: rgb(125, 247, 207);}
-  .grandparent{margin: auto;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  body{
+    background-color: rgb(125, 247, 207);
+  }
+  .grandparent{
+    margin: auto;
     background-color: rgb(251, 247, 247);
     width: 95%;
     padding: 10px;
-    border-radius: 17px;}
-  .pricing{font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 17px;
+  }
+  .pricing{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 5px;
     font-size:17px;
     margin-top: 20px;
     margin-bottom: 10px;
     font-style: italic;
-    font-weight: 100;}
+    font-weight: 100;
+  }
   @media (max-width:670px) {
-    .grid{grid-template-columns: 100%;}
-    .b_name_inp{width: 80%;
-      padding: 8px;border: none;border-bottom: 1px solid black;outline: 0;} 
-    .grid1{margin-right: 0}
-  select{width: 82%;
-    padding: 8px;}
-  .price_inp,.d_price_inp{padding: 5px;border: none;border-bottom: 1px solid black;outline: 0;}
-  .upload{width: 82%;
-    padding: 9px;}
-  body{margin-top:4px;}
+    .grid{
+      grid-template-columns: 100%;
+    }
+    .b_name_inp{
+      width: 80%;
+      padding: 8px;border: none;border-bottom: 1px solid black;outline: 0;
+    } 
+    .grid1{
+      margin-right: 0;
+    }
+  select{
+    width: 82%;
+    padding: 8px;
+  }
+  .price_inp,.d_price_inp{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: 0;
+  }
+  .upload{
+    width: 82%;
+    padding: 9px;
+  }
+  body{
+    margin-top:4px;
+  }
   }
   @media (min-width:800px) {
-    .grandparent{padding-top: 40px;padding-bottom: 40px;background-color: rgb(252, 248, 248);padding-left: 22px;padding-right: 22px; }
+    .grandparent{
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: rgb(252, 248, 248);
+      padding-left: 22px;
+      padding-right: 22px;
+     }
     
   }
   @media (max-width:580px) {
-    .price_inp,.d_price_inp{padding: 5px;}
-    .pricegrid{width: 90%;}
+    .price_inp,.d_price_inp{
+      padding: 5px;
+    }
+    .pricegrid{
+      width: 90%;
+    }
   }
   @media (max-width:500px) {
-    .price_inp,.d_price_inp{padding: 8px;
-       width: 80%;}
-    .pricegrid{grid-template-columns: 100%;
-      width: 100%;}
-    .price2,.dprice{margin-bottom: 5px;
-      margin-top: 5px;}
+    .price_inp,.d_price_inp{
+      padding: 8px;
+       width: 80%;
+      }
+    .pricegrid{
+      grid-template-columns: 100%;
+      width: 100%;
+    }
+    .price2,.dprice{
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
   }
 
   
